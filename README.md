@@ -2,7 +2,7 @@
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/bruteforce/subjack.svg)
 
-> sdsasdffa.
+> Docker container that builds the sub-jack Go project.
 
 - [Docker Container](https://hub.docker.com/r/bruteforce/subjack) on Docker Hub
 - [Dockerfile](https://github.com/beerMT/subjack_docker/blob/main/subjack.Dockerfile) on GitHub
