@@ -2,7 +2,7 @@
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/bruteforce/subjack.svg)
 
-> Light weight Nmap container that uses grab_beacon_config.nse to parse Cobalt Strike Beacon for a given host.
+> sdsasdffa.
 
 - [Docker Container](https://hub.docker.com/r/bruteforce/subjack) on Docker Hub
 - [Dockerfile](https://github.com/beerMT/subjack_docker/blob/main/subjack.Dockerfile) on GitHub
