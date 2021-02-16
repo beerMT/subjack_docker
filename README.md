@@ -1,17 +1,17 @@
 # subjack_docker
 
-![Docker Pulls](https://img.shields.io/docker/pulls/bruteforce/subjack)docker.svg)
+![Docker Pulls](https://img.shields.io/docker/pulls/bruteforce/subjack.svg)
 
 > Light weight Nmap container that uses grab_beacon_config.nse to parse Cobalt Strike Beacon for a given host.
 
-- [Docker Container](https://hub.docker.com/r/bruteforce/subjack_docker) on Docker Hub
+- [Docker Container](https://hub.docker.com/r/bruteforce/subjack) on Docker Hub
 - [Dockerfile](https://github.com/beerMT/subjack_docker/blob/main/subjack.Dockerfile) on GitHub
 
 ## Usage
 
 To run the script against an IP target:
 ```bash
-docker run --rm -v $(pwd):/mnt/ bruteforce/subjack_docker -w /mnt/<target_list.txt> -ssl -v
+docker run --rm -v $(pwd):/mnt/ bruteforce/subjack -w /mnt/<target_list.txt> -ssl -v
 ```
 > `-w` reads in the target list to enumerate against, this file directory is a mounted volume via the docker -v flag.
 
@@ -19,7 +19,7 @@ docker run --rm -v $(pwd):/mnt/ bruteforce/subjack_docker -w /mnt/<target_list.t
 
 To receive details about sub-jack:
 ```bash
-docker run --rm bruteforce/subjack_docker -h
+docker run --rm bruteforce/subjack -h
 ```
 
 ## Target Selection
