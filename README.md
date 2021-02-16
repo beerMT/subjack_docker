@@ -24,8 +24,9 @@ docker run --rm bruteforce/subjack -h
 
 ## Target Selection
 
-This tool can be used for offensive and defensive security posture checks. Determine public facing domains for the organization, usually cloud assets, and check to see if they are susceptible to dangling DNS/ subdomain hijacking. Subdomains can be gathered durign recon phases of an offensive engagement via passive DNS records, subdomain brute forcing Insert these domains into the target_list.txt and pass that into the subjack docker container for analysis.
+This tool can be used for offensive and defensive security posture checks. Determine public facing domains for the organization, usually cloud assets, and check to see if they are susceptible to dangling DNS/ subdomain hijacking. Subdomains can be gathered durign recon phases of an offensive engagement via passive DNS records, forward DNS, subdomain brute forcing, and TLS certificate inspection. Insert the discovered (or known) domains into the target_list.txt and pass (docker flag -v is a bind mount from host to container) that into the subjack docker container for analysis.
 
 
-## References:
-* https://hub.docker.com/r/txt3rob/sub-jack (this wasn't building properly and is a bit outdated, super helpful though)
+## References
+* https://github.com/haccer/subjack (THE project - hats off to a cool tool!)
+* https://hub.docker.com/r/txt3rob/sub-jack (this wasn't building properly and is a bit outdated, still helpful though in container dependencies)
